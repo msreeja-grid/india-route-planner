@@ -34,7 +34,7 @@ class RouteEngine:
                     self.adj[c2][c1] = d
             print(f"✅ Loaded {len(nodes)} cities and built road network.")
         except Exception as e:
-            print(f"❌ Error loading CSV: {e}")
+            print(f"Error loading CSV: {e}")
 
     def haversine(self, p1, p2):
         lat1, lon1 = p1; lat2, lon2 = p2
