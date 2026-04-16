@@ -1,8 +1,4 @@
-Here is your **UPDATED PROFESSIONAL README.md** based on your **current real project structure** (Flask modular architecture + config + services + routes).
 
-I cleaned it, corrected structure, and made it **GitHub + portfolio ready**.
-
----
 
 # 🇮🇳 India Route Planner: High-Performance Pathfinding System
 
