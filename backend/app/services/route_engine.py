@@ -10,7 +10,7 @@ class RouteEngine:
 
     def load_data(self):
         try:
-            # ✅ Using config file instead of hardcoding path
+            #  Using config file instead of hardcoding path
             df = pd.read_csv(Config.CSV_PATH)
 
             for _, r in df.iterrows():
@@ -37,10 +37,10 @@ class RouteEngine:
                     self.adj[c1][c2] = d
                     self.adj[c2][c1] = d
 
-            print(f"✅ Loaded {len(nodes)} cities and built road network.")
+            print(f" Loaded {len(nodes)} cities and built road network.")
 
         except Exception as e:
-            print(f"❌ Error loading CSV: {e}")
+            print(f"Error loading CSV: {e}")
 
     def haversine(self, p1, p2):
         lat1, lon1 = p1
@@ -64,6 +64,6 @@ class RouteEngine:
         return R * 2 * math.asin(math.sqrt(a))
 
 
-# ✅ GLOBAL ENGINE (IMPORTANT: used by algorithms)
+# GLOBAL ENGINE (IMPORTANT: used by algorithms)
 engine = RouteEngine()
 engine.load_data()
